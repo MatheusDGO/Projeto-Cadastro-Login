@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "LoginUsuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string texto = ViewBag.Msg as string;
+
+}
+
+
+
+<div class="col-sm-12" id="login-page" style=" margin-top: 80px">
+    <div class="container">
+        <form>
+
+
+
+
+            @if (ViewBag.Msg == "Seja bem vindo!")
+            {
+                <div class="alert alert-success" role="alert">
+
+                    <h1> @ViewBag.Msg</h1>
+                </div>
+
+            }
+
+            else
+            {
+                <div class="alert alert-danger" role="alert">
+                    <h1>@ViewBag.Msg</h1>
+                </div>
+            }
+
+
+
+
+        </form>
+    </div>
+
+
+
+</div>
+
